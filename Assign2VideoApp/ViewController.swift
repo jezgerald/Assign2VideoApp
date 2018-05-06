@@ -21,6 +21,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    // Home screen
+    @IBAction func switchCamera(_ sender: UIButton) {
+    }
+    @IBAction func recordButton(_ sender: UIButton) {
+    }
+    
 }
 
