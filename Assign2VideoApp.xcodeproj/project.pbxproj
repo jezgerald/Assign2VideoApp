@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50C6F3C420981CE400FE5D29 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C6F3C320981CE400FE5D29 /* MapKit.framework */; };
 		50D714D92088721A006B7622 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D714D82088721A006B7622 /* AppDelegate.swift */; };
 		50D714DB2088721A006B7622 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D714DA2088721A006B7622 /* ViewController.swift */; };
 		50D714DE2088721A006B7622 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50D714DC2088721A006B7622 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50C6F3C320981CE400FE5D29 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		50C6F3C720981CEE00FE5D29 /* Assign2VideoApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Assign2VideoApp.entitlements; sourceTree = "<group>"; };
 		50D714D52088721A006B7622 /* Assign2VideoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assign2VideoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D714D82088721A006B7622 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50D714DA2088721A006B7622 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +32,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50C6F3C420981CE400FE5D29 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50C6F3C220981CE400FE5D29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50C6F3C320981CE400FE5D29 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		50D714CC2088721A006B7622 = {
 			isa = PBXGroup;
 			children = (
 				50D714D72088721A006B7622 /* Assign2VideoApp */,
 				50D714D62088721A006B7622 /* Products */,
+				50C6F3C220981CE400FE5D29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +67,7 @@
 		50D714D72088721A006B7622 /* Assign2VideoApp */ = {
 			isa = PBXGroup;
 			children = (
+				50C6F3C720981CEE00FE5D29 /* Assign2VideoApp.entitlements */,
 				50D714D82088721A006B7622 /* AppDelegate.swift */,
 				50D714DA2088721A006B7622 /* ViewController.swift */,
 				50D714DC2088721A006B7622 /* Main.storyboard */,
@@ -96,6 +110,14 @@
 				TargetAttributes = {
 					50D714D42088721A006B7622 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
